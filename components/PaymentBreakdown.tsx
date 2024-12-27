@@ -20,7 +20,7 @@ const PaymentBreakdown = ({ totalPrice }: PaymentBreakdownProps) => {
       <h3 className="font-semibold text-lg">Estimated Payment Breakdown</h3>
       <div className="mt-4">
         <p>
-          Down Payment:
+          Down Payment:{" "}
           <span id="down-payment" className="font-bold">
             €{downPayment.toLocaleString()}
           </span>
@@ -32,7 +32,7 @@ const PaymentBreakdown = ({ totalPrice }: PaymentBreakdownProps) => {
           Interest Rate: <span className="font-bold">3% APR</span>
         </p>
         <p>
-          Estimated Monthly Payment:
+          Estimated Monthly Payment:{" "}
           <span id="monthly-payment" className="font-bold text-2xl">
             €{monthlyPayment.toFixed(2).toLocaleString()}
           </span>
